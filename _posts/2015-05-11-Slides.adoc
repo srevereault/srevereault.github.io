@@ -1,0 +1,6 @@
+= Slides
+
+== "How to reconcile ITIL and DevOps" - DevOpsDays Paris 2015 (ignite talk)
+
+* link:slides/ITIL-DevOps/index.html[Click here for the slides]
+* link:http://www.dailymotion.com/video/x2pinft_devopsdays-paris-2015-ignites-2_tech?start=1020[Video on Dailymotion]
