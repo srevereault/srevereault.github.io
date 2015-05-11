@@ -1,4 +1,4 @@
-= Slides
+= Slides Ignite talk DevOpsDays Paris
 :hp-tags: Slides,DevOps,DevOpsDays
 
 == "How to reconcile ITIL and DevOps" - DevOpsDays Paris 2015 (ignite talk)
