@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>ITIL-DevOps</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sii.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>
+                 				How to reconcile ITIL and DevOps
+              				</h1>
+					<h2>
+						Sylvain Révéreault
+					</h2>
+				</section>
+				<section>
+					<h1>I'm an Ops </h1>
+					<ul>
+						<li>GNU/Linux administrator</li>
+						<li>System integration</li>
+						<li>Consultant & trainer (Cloud, DevOps)</li>
+						<li>DevOps enthusiast</li>
+					</ul>
+					<br/>
+					<img src="images/rennesdevops_small.png"/>&nbsp;<img src="images/bzhcamp_small.png"/>
+				</section>
+				<section>
+					<h2>
+						"The" question:
+					</h2>
+					<blockquote>
+						<b>But we already "are" ITIL, isn't DevOps incompatible?</b>
+						<br/>
+						(And why would we need DevOps if we already are ITIL?)
+              				</blockquote>
+					<p align="right"><i>Client's IT manager</i></p>
+				</section>
+				<section>
+					<h2>
+                 				The (lost ?) goals of ITIL
+              				</h2>
+					<blockquote>
+                 				ITIL (...) is a set of practices for IT service management (ITSM) that focuses on <strong>aligning IT services with the needs of business.</strong>
+              				</blockquote>
+					<p align="right"><i><a href="http://en.wikipedia.org/wiki/ITIL">http://en.wikipedia.org/wiki/ITIL</a></i></p>
+				</section>
+				<section>
+					<h2>
+                 				The (lost ?) goals of ITIL
+              				</h2>
+					<blockquote>
+						ITIL describes processes, procedures, tasks, and checklists (...) for establishing <strong>integration with the organization's strategy, delivering value</strong>, (...)
+						<br/>
+						<br/>
+						It allows the organization to establish a baseline from which it can <strong>plan, implement, and measure</strong>.
+              				</blockquote>
+					<p align="right"><i><a href="http://en.wikipedia.org/wiki/ITIL">http://en.wikipedia.org/wiki/ITIL</a></i></p>
+				</section>
+				<section>
+					<h2>
+                 				Sounds familiar?
+              				</h2>
+					<ul>
+						<li>Aligning IT with business</li>
+						<li>Delivering value</li>
+						<li>Plan, implement and measure</li>
+					</ul>
+					<br/>
+					<img src="images/gorilla.jpg"/>
+					<p align="right" style="font-size:20px"><i>Image Source: Wikimedia Commons</i></p>
+				</section>
+				<section>
+					<h2>
+                 				The ITIL lifecylce
+              				</h2>
+					<img src="images/ITIL_lifecycle.png"/>
+					<p align="right" style="font-size:20px"><i>Image Source: Unknown</i></p>
+				</section>
+				<section>
+					<h2>
+                 				Service Strategy
+              				</h2>
+					<ul>
+						<li><strong>Strategy Management:</strong> focuses on serving customers... a good place to think about metrics</li>
+						<li><strong>Demand Management:</strong> understand and anticipate customer demand, input for capacity management</li>
+					</ul>
+					<p><strong>Value = Utility + Warranty</strong></p>
+				</section>
+				<section>
+					<h2>
+                 				Service Design
+              				</h2>
+					<ul>
+						<li><strong>Capacity, availability, security:</strong> dealing with Ops needs in the design phase</li>
+						<li><strong>Architecture Management: </strong> use it to align software architecture and system architecture</li>
+					</ul>
+				</section>
+				<section>
+					<h2>
+                 				Service Transition
+              				</h2>
+					<ul>
+						<li><strong>Service Validation and Testing:</strong> functional & technical testing, a nice place for automation</li>
+						<li><strong>Knowledge Management:</strong> share, share, share</li>
+					</ul>
+				</section>
+				<section>
+					<h2>
+                 				Service Transition: Change Management
+              				</h2>
+					<blockquote>
+						When the wind of change blows, some people build walls, others build windmills.
+              				</blockquote>
+					<p align="right" style="font-size:20px"><i>Ancient Chinese Proverb</i></p>
+				</section>
+				<section>
+					<h2>
+                 				Change Management defines 3 types of change:
+              				</h2>
+					<ul>
+						<li><strong>Emergency change:</strong> a specific workflow, mainly for urgent bug corrections and security patches</li>
+						<li><strong>Standard change:</strong> a recurrent, well known, relatively risk-free change</li>
+						<li><strong>Normal change:</strong> everything else (this is an heavy process, with formal request for change, change advisory board, ...</li>	
+					</ul>
+				</section>
+				<section>
+					<h2>
+                 				Change standardization is the key	
+              				</h2>
+					<p>This is what makes you a windwill builder</p>
+					<img src="images/windmill.jpg"/>
+					<p align="right" style="font-size:20px"><i>Image Source: Wikimedia Commons</i></p>
+					<p>Use automation and reproducibility to achieve this standardization</p>
+				</section>
+				<section>
+					<h2>
+                 				Service Operation
+              				</h2>
+					<ul>
+						<li><strong>Event & Incident management:</strong> think "metrics", embrace Dev & Ops cooperation</li>
+						<li><strong>Problem Management:</strong> must be carried by both Ops & Devs</li>	
+					</ul>
+					<p>Ticketing tools should be used for traceability, not to replace communication!</p>
+				</section>
+				<section>
+					<h2>
+                 				Continual Service Improvement
+              				</h2>
+					<img src="images/pdca.png"/>
+					<p align="right" style="font-size:20px"><i>Image Source: <a href="http://en.wikipedia.org/wiki/PDCA">http://en.wikipedia.org/wiki/PDCA</a></i></p>
+				</section>
+				<section>
+					<h2>
+                 				Conclusion
+              				</h2>
+					<p>A "static" ITIL implementation is probably a wrong ITIL implementation</p>
+					<p>Fast moving business implies Fast moving ITIL.</p>
+					<p><strong>ITIL needs DevOps:</strong> end to end agility, production ready applications</p>
+				</section>
+				<section>
+					<h2>
+                 				Conclusion
+              				</h2>
+					<p>ITIL is DevOps compatible, you "just" need to apply the DevOps principles</p>
+					<p>Don't mistake ticketing tools for communication tools</p>
+					<img src="images/standardize.jpg"/>
+					<p align="right" style="font-size:20px"><i>Image Source: Know Your Meme</i></p>
+					
+				</section>
+				<section>
+					<h2>
+                 				Conclusion
+              				</h2>
+					<blockquote>
+						Culture is hard, start with behavior...
+              				</blockquote>
+					<p align="right" style="font-size:20px"><i>Kris Buytaert, Patrick Debois</i></p>
+					<br/>
+					<p><strong>CAMS => SMAC</strong></p>
+				</section>
+				<section>
+					<h2>
+                 				Conclusion
+              				</h2>
+					<ul>
+						<li><strong>Share:</strong> involve Dev & Ops in every process</li>
+						<li><strong>Metrics:</strong> use them to answer ITIL traceabilty requirements</li>
+						<li><strong>Automation:</strong> use whenever possible, especially to standardize your changes</li>
+						<li><strong>Culture:</strong> rely on ITIL's service oriented culture, improve with all of the above</li>
+					</ul>
+				</section>
+				<section>
+					<h1>
+                 				Questions?
+              				</h1>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				autoSlide: 15000,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
