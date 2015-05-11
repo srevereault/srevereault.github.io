@@ -1,10 +1,1 @@
-{
-  "meta": {
-    "username": "srevereault",
-    "repositoryName": "srevereault.github.io",
-    "branch": "master"
-  },
-  "theme": {
-    "name": "Casper"
-  }
-}
+{"meta":{"username":"srevereault","repositoryName":"srevereault.github.io","branch":"master"},"site":{"title":"Sylvain Révéreault's stuff","url":"https://srevereault.github.io"},"socialnetwork":{"twitter":"@srevereault"},"theme":{"name":"Casper","url":"//srevereault.github.io/themes/Casper"}}
