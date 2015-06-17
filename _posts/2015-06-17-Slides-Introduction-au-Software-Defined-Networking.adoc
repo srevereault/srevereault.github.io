@@ -1,0 +1,7 @@
+= Slides "Introduction au Software Defined Networking"
+:hp-tags: Slides,SDN,BreizhCamp
+
+== "Introduction au Software Defined Networking" - Breizhcamp 2015
+
+* link:/slides/sdn-intro/index.html[Les slides sont ici]
+* link:https://www.youtube.com/user/BreizhCamp[La vidéo arrive bientôt...]
