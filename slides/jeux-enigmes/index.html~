@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Jeux et énigmes avec RPi, Arduino, électronique</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/bzhcmp.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Des jeux et des énigmes "grandeur nature"</h1>
+					<h2>avec Raspberry Pi, Arduino et de l'électronique</h2>
+				</section>
+				<section>
+					<h2>Petite Intro...</h2>
+					<img class="fragment roll-in" src=images/sii.jpg>
+					<br/>
+					<img class="fragment roll-in" src=images/brain.jpg>
+				</section>
+				<section>
+					<h2>Petite Intro...</h2>
+					<img class="fragment roll-in" src=images/keanu.gif width=400px>
+					<br/>
+					<a href="http://www.brainrennes.com/" class="fragment roll-in">http://www.brainrennes.com/</a>
+				</section>
+				<section>
+					<h2>Petite Intro...</h2>
+					<img src=images/arduino_kit.jpg>
+				</section>
+				<section>
+					<section>
+						<h1>Le digicode</h1>
+						<img src=images/door.gif>
+					</section>
+					<section>
+						<h2>Le digicode</h2>
+						<p>Cahier des charges</p>
+						<blockquote>Les participants doivent trouver des indices composant un code permettant d'ouvrir une porte.</blockquote>
+					</section>
+					<section>
+						<h2>Le digicode</h2>
+						<p>Réalisation - shopping list</p>
+						<ul>
+							<li class="fragment roll-in">Une carte Arduino Uno - 7$</li>
+							<li class="fragment roll-in">Un keypad - 5$</li>
+							<li class="fragment roll-in">Un écran LCD 16x2 avec module i2c - 6$</li>
+							<li class="fragment roll-in">Un relais - 3$</li>
+								<li class="fragment roll-in">Une gâche électrique - 20$</li>
+							<li class="fragment roll-in">Une alim. 5v et une alim. 12v - 9$</li>
+							<li class="fragment roll-in">Une LED rouge et une LED verte - 0,02$</li>
+							<li class="fragment roll-in">Un joli boitier - 10$</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Le digicode</h2>
+						<img src="images/digicode.png" width=600px>
+					</section>
+					<section>
+						<h2>Le digicode</h2>
+						<p class="fragment roll-in">Code source...</p>
+						<p class="fragment roll-in">=&gt; Démo</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Le jeu d'échec</h1>
+						<img src=images/chess.gif>
+					</section>
+					<section>
+						<h2>Le jeu d'échec</h2>
+						<p>Cahier des charges</p>
+						<blockquote>En réalisant une action sur un jeu d'échec, les participants obtiennent un code numérique.</blockquote>
+					</section>
+					<section>
+						<h2>Le jeu d'échec</h2>
+						<p>Réalisation - shopping list</p>
+						<ul>
+							<li class="fragment roll-in">4 afficheurs 7 segments</li>
+							<li class="fragment roll-in">1 résistance</li>
+							<li class="fragment roll-in">Des "Reed switchs"</li>
+							<li class="fragment roll-in">Des aimants</li>
+							<li class="fragment roll-in">Fil, plaque d'essai</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Le jeu d'échec</h2>
+						<p>Work in progress...</p>
+						<img src=images/reed.jpg width=500px>
+						<p class="fragment roll-in"> =&gt; Capteur à effet hall</p>
+					</section>
+					<section>
+						<h2>Le jeu d'échec</h2>
+						<p>Vidéo</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>L'écran télécommandé</h1>
+						<img src=images/remote.gif height=300px>
+					</section>
+					<section>
+						<h2>L'écran télécommandé</h2>
+						<p>Cahier des charges</p>
+						<blockquote>Une télécommande trouvée dans la pièce doit permettre le déclenchement d'une vidéo.</blockquote>
+						<blockquote class="fragment roll-in">Une seconde télécommande doit permettre à l'équipe BRAIN de réinitialiser ou arrêter le système.</blockquote>
+					</section>
+					<section>
+						<h2>L'écran télécommandé</h2>
+						<p>Réalisation - shopping list</p>
+						<ul>
+							<li class="fragment roll-in">1 Raspberry Pi 2, carte SD, boitier, alim</li>
+							<li class="fragment roll-in">1 kit télécommande et récepteur IR</li>
+							<li class="fragment roll-in">1 seconde télécommande avec 1 seul bouton</li>
+							<li class="fragment roll-in">1 écran (tactile)</li>
+						</ul>
+					</section>
+					<section>
+						<h1>L'écran télécommandé</h1>
+						<img src=images/rpi2_ir_bb.png height=300px>
+					</section>
+					<section>
+						<h2>L'écran télécommandé</h2>
+						<p>Gestion de l'infrarouge</p>
+						<ul>
+							<li class="fragment roll-in">Utilisation de LIRC</li>
+							<li class="fragment roll-in">"Apprentissage" de la télécommande</li>
+							<li class="fragment roll-in">Mappage des touches sur des signaux LIRC</li>
+							<li class="fragment roll-in">Client Python connecté à LIRC</li>
+							<li class="fragment roll-in"><a href="http://www.modmypi.com/blog/raspberry-pis-remotes-ir-receivers">http://www.modmypi.com/blog/raspberry-pis-remotes-ir-receivers</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>L'écran télécommandé</h2>
+						<p>Affichage</p>
+						<ul>
+							<li class="fragment roll-in">Page HTML5 contenant la vidéo (librairie Video.js)</li>
+							<li class="fragment roll-in">Première tentative : application Python avec Webkit embarqué</li>
+							<li class="fragment roll-in">Deuxième tentative : application Python avec lecteur media embarqué</li>
+							<li class="fragment roll-in">Troisième tentative : pilotage de Midori depuis Python</li>
+							<li class="fragment roll-in">...</li>
+							<li class="fragment roll-in">Solution pragmatique (et moche) : lancement d'Epiphany, utilisation de xte et interception Javascript (shortcut.js)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>L'écran télécommandé</h2>
+						<p>Config LIRC</p>
+						<pre><code data-trim>
+begin
+button = KEY_S
+prog = brain
+config = play
+end
+begin
+button = KEY_REFRESH
+prog = brain
+config = reload
+end
+begin
+button = KEY_POWER
+prog = brain
+config = stop
+end
+						</code></pre>
+					</section>
+					<section>
+						<h2>L'écran télécommandé</h2>
+						<p>Code source Python</p>
+						<pre><code data-trim>
+import lirc
+import subprocess
+import time
+
+def initir():
+    sockid = lirc.init("brain", blocking = False)
+
+def launch_epi():
+    epiph = subprocess.Popen(["epiphany", "file:///home/pi/logo.html"])
+    time.sleep(10)
+    subprocess.Popen(["xte", "key F11"])
+
+def loadvideo():
+    subprocess.Popen(["xte", "key j"])
+
+def reload():
+    subprocess.Popen(["xte", "key r"])
+
+def shutdown():
+    subprocess.Popen(["sudo", "halt", "-p"])
+
+initir()
+launch_epi()
+
+while True:
+    codeIR = lirc.nextcode()
+    if codeIR:
+        if codeIR[0] == "play":
+            loadvideo()
+        if codeIR[0] == "reload":
+            reload()
+        if codeIR[0] == "stop":
+            shutdown()
+						</code></pre>
+					</section>
+					<section>
+						<h2>L'écran télécommandé</h2>
+						<p>Code source Javascript</p>
+						<pre><code data-trim>
+<script src="shortcut.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function init() {
+        shortcut.add("j", function() {
+             window.location.href = "file:///home/pi/video.html";
+        });
+    }
+window.onload=init;
+</script>
+
+						</code></pre>
+					</section>
+					<section>
+						<h2>L'écran télécommandé</h2>
+						<p>=&gt; Démo</p>
+						<p class="fragment roll-in">Work in progress</p>
+						<ul>
+							<li class="fragment roll-in">Compiler Webkit avec le support de l'accélération vidéo</li>
+							<li class="fragment roll-in">Amélioration du code Python</li>
+							<li class="fragment roll-in">Passage en mode "live system" : <a href="http://blog.pi3g.com/2014/04/make-raspbian-system-read-only/">http://blog.pi3g.com/2014/04/make-raspbian-system-read-only/</a></li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Conclusion</h2>
+						<ul>
+							<li class="fragment roll-in">Plaisir d'interagir avec l'environnement physique</li>
+							<li class="fragment roll-in">Modification du "workspace", investissements</li>
+							<li class="fragment roll-in">Réviser l'électronique, les PIC, ...</li>
+							<li class="fragment roll-in">Pour aller plus loin : programmation de PIC en assembleur</li>
+							<li class="fragment roll-in"><a href="http://www.brainrennes.com/">B.R.A.I.N.</a>, c'est cool !</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Questions, améliorations, ...</h2>
+						<img src=images/questions.gif>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
