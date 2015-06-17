@@ -1,0 +1,7 @@
+= Slides "Des jeux et des énigmes..."
+:hp-tags: Slides,rapsberrypi,arduino,BreizhCamp
+
+== "Des jeux et des énigmes grandeur nature avec Raspberry Pi, Ardunio et de l'électronique" - Breizhcamp 2015
+
+* link:/slides/jeux-enigmes/index.html[Les slides sont ici]
+* link:https://www.youtube.com/user/BreizhCamp[La vidéo arrive bientôt...]
